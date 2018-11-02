@@ -59,7 +59,7 @@ function success_handlerForm (loadcount) {
 	app.get("*", showUsage);
 	app.get("/reply", function (req, res) {
 		
-		res.json("Ok":true);
+		res.json({"Ok":true});
 			
 		
 	});
