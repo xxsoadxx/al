@@ -1,0 +1,65 @@
+﻿! array myname= nombre completo|nombre y apellido|me llamo|me dicen|me llaman|nombre|nombre y apellido|nombre
+
+! array mycodarea= codigo de area|codigo area
+
+! array myemail= email|mail|correo|correo electronico
+
+! array mydni= dni|cedula|carnet
+
+! array myphone= telefono|telefono de contacto
+
+! array myprovince= provincia|provincias
+
+! array mylocation= localidad|localidades
+
+! array myammount= monto|montos|monto del credito|montos del credito|montos del creditos|monto del creditos|credito
+
+! array mydestiny= destino|destino del credito|lo quiero para|es para|credito para|prestamo para|prestamo
+
+! array is= es
+
+! array start= comenzar|empezar|iniciar
+
+! array ammount = montos monto importe importes total totales suma sumas coste costes
+
+! array dolar= dolares dolar
+
+! array need= necesito|preciso|quiero|quisiera|precisaria|deseo|solicitar|solicito|iniciar|es para|lo quiero para|seria para|la quiero para
+
+! array change= cambiar cambio modificar modifico alterar
+
+! array name= nombre|nombre a|nombre completo|nombre completo a|mi nombre|mi nombre a|mi nombre completo|mi nombre completo a
+
+
+//! array mybirthdayis= fecha de nacimiento es|naci el|naci|fecha de nacimiento|nacimiento fue|fecha nacimiento fue|nacimiento
+
+//! array birthday=fecha de nacimiento a|fecha de nacimiento|naci|naci a|nacimiento|nacimiento a
+
+! array phonenumber= telefono a|telefono|numero de contacto|numero de contacto a
+
+! array myphonenumberis= telefono es|numero es|telefono|mi telefono es|telefono|numero de telefono|numero de contacto es|numero de contacto
+
+! array mylaboroldis= antiguedad laboral|antiguedad laboral es|trabajo hace|trabajo hace ya|trabajo ya hace|hace unos
+
+! array laborold=antiguedad laboral|antiguedad laboral a|cuanto trabajo|cuanto trabajo a
+
+! array myannualincomeis= ingresos anuales son|ingresos anuales son de|ingresos anuales es|ingresos anuales es de|ingresos anuales de|ingresos son|ingresos son de|ingresos es|ingresos es de|ingresos de|gano
+
+! array annualincome= ingresos anuales a|ingresos anuales son de|ingresos anuales es|ingresos anuales es de|ingresos anuales de|percibo anualmente|ingresos a|ingresos son de|ingresos es|ingresos es de|ingresos de|percibo anualmente|ingreso anual a|ingreso anual es de|ingreso anual es
+
+! array time= meses|mes|año|años
+
+! array confirm = confirmar confirmo acepto continuar procesar
+
+! array motive = motivo motivos fin objetivo objetivos
+
+! array mymotive = motivo motivos fin objetivo objetivos|motivo a|motivos a|fin a|objetivo a|objetivos a
+
+! array feesamount= cantidad de cuotas|cantidad de cuota|cantidades de cuota|cantidades de cuotas|plazo de cuotas|plazo de cuota|plazos de cuota|plazos de cuotas|cuotas|cuota
+
+! array myfeesamount= cantidad de cuotas|cantidad de cuota|cantidades de cuota|cantidades de cuotas|cantidad de cuotas a|cantidad de cuota a|cantidades de cuota a|cantidades de cuotas a|plazo de cuotas|plazo de cuota|plazos de cuota|plazos de cuotas|plazo de cuotas a|plazo de cuota a|plazos de cuota a|plazos de cuotas a|cuotas|cuotas a
+
+//! array numberday= 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+
+//! array month = enero|febrero|marzo|abril|mayo|junio|julio|agosto|setiembre|septiembre|octubre|noviembre|diciembre
+

@@ -1,0 +1,67 @@
++ [*] (@myname) (@is) *
+- <call>setName {formal}<star3>{/formal}</call>
+
++ [*] (@mycodarea) (@is) #
+- <call>setCodarea <star3></call>
+
++ [*] (@myemail) (@is) *
+- <call>setEmail <star3></call>
+
++ [*] (@mydni) (@is) *
+- <call>setDNI <star3></call>
+
++ [*] (@myphone) (@is) *
+- <call>setPhone <star3></call>
+
++ [*] (@myammount) (@is) # [*]
+- <call>setAmmount <star3></call>
+
++ [*] (@mydestiny) (@is) *
+- <call>setDestiny <star3></call>
+
++ [*] (@myprovince) (@is) *
+- <call>setProvince {formal}<star3>{/formal}</call>
+
++ [*] (@mylocation) (@is) *
+- <call>setLocation {formal}<star3>{/formal}</call>
+
++ [*] (@myname) *
+- <call>setName {formal}<star2>{/formal}</call>
+
++ [*] (@myemail) *
+- <call>setEmail <star2></call>
+
++ [*] (@mydni) *
+- <call>setDNI <star2></call>
+
++ [*] (@myphone) *
+- <call>setPhone <star2></call>
+
++ [*] (@myprovince) *
+- <call>setProvince {formal}<star2>{/formal}</call>
+
++ [*] (@mylocation) *
+- <call>setLocation {formal}<star2>{/formal}</call>
+
++ [*] (@myammount) [a] # [*]
+- <call>setAmmount <star2></call>
+
++ [*] (@mydestiny) *
+- <call>setDestiny <star2></call>
+
+
++ # 
+- <call>analizeNumber <star></call>
+
++ *
+- <call>analizeText {formal}<star>{/formal}</call>
+
+
+
+
+
+
+
+
+
+
