@@ -62,7 +62,7 @@ function success_handlerForm (loadcount) {
 		res.json("Ok":true);
 			
 		
-	);
+	});
 
 	// Start listening.
 	app.listen(PORT, function() {
