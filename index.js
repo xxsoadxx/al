@@ -57,6 +57,12 @@ function success_handlerForm (loadcount) {
 	app.post("/reply", getReply);
 	app.get("/", showUsage);
 	app.get("*", showUsage);
+	app.get("/reply", function (req, res) {
+		
+		res.json("Ok":true);
+			
+		
+	);
 
 	// Start listening.
 	app.listen(PORT, function() {
