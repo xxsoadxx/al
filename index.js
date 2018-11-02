@@ -52,11 +52,16 @@ function success_handlerForm (loadcount) {
 	// Parse application/json inputs.
 	app.use(bodyParser.json());
 	app.set("json spaces", 4);
-	app.use('/', express.static('public'));
+	//app.use('/', express.static('public'));
 	// Set up routes.
 	app.post("/reply", getReply);
-	app.get("/", showUsage);
-	app.get("*", showUsage);
+	app.get("/",  function (req, res) {
+		
+		res.json({"Ok":true});
+			
+		
+	});
+	
 	app.get("/reply", function (req, res) {
 		
 		res.json({"Ok":true});
