@@ -15,6 +15,7 @@ var express = require("express"),
 	RiveScript = require("./lib/rivescript.js");
 var db = require('diskdb');
 var fs = require('fs');
+var cors = require('cors');
 
 const PORT = process.env.PORT || 5000;
 
@@ -26,7 +27,9 @@ var botForm = new RiveScript({debug: true});
 var core = require('./core');
 var request = require('request');
 //var fs = require('fs');
-
+var corsOptions = {
+	origin: '*'
+};
 
 bot.loadDirectory("./Sofia_Brain", success_handler, error_handler);
 
@@ -51,6 +54,9 @@ function success_handlerForm (loadcount) {
 
 	// Parse application/json inputs.
 	app.use(bodyParser.json());
+
+	app.use(cors(corsOptions));
+	
 	app.set("json spaces", 4);
 	//app.use('/', express.static('public'));
 	// Set up routes.
