@@ -56,7 +56,7 @@ function success_handlerForm (loadcount) {
 	app.use(bodyParser.json());
 
 	app.use(cors(corsOptions));
-	
+
 	app.set("json spaces", 4);
 	//app.use('/', express.static('public'));
 	// Set up routes.

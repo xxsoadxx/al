@@ -1,4 +1,4 @@
-﻿const formSettings = require('./formSettings');
+const formSettings = require('./formSettings');
 
 const doc = require('arg.js').document;
 
@@ -15,7 +15,7 @@ function checkFlow(vars){
 		vars.voice=''
 
 	for (var key in vars.formulario) {
-		console.log('recorriendo ',vars.formulario[key].trim())
+		
 	 	if(vars.formulario[key].trim()==''){
 	 		vars.reply+=formSettings[key].respuesta.txt
 	 		vars.voice=formSettings[key].respuesta.voice.trim()!=='' ? formSettings[key].respuesta.voice : formSettings[key].respuesta.txt
@@ -31,7 +31,7 @@ function checkFlow(vars){
 	}
 
 	vars.completed=completed
-	console.log('se va del checkFlow ',vars)
+	
 
 	return vars
 	 
@@ -50,7 +50,7 @@ function sanatizeValue(value,param){
 			if(_value.includes('punto'))
 				_value=_value.replace('punto','.')
 
-			console.log('aca nene')
+			
 			
 			break;
 		case 'dni':
@@ -119,7 +119,7 @@ var core ={
 	},
 
 	saveData: function  (vars,param,value) {
-		console.log('dentro de saveData ',param,value,vars)
+		
 		value=value.trim()
 		value=sanatizeValue(value,param)
 		switch(param){
@@ -163,7 +163,7 @@ var core ={
 			case 'provincia':
 			case 'localidad':
 			case 'codarea':
-				console.log('en el case provincia localidad codarea')
+
 				let values=formSettings[param].values
 				let error=true
 				let auxValue=value.toLowerCase().trim()
@@ -171,9 +171,9 @@ var core ={
 
 
 				for (let i = 0; i < values.length; i++) {
-					console.log('evaluo ',auxValue,' - ',values[i].toLowerCase())
+					
 					if(auxValue==values[i].toLowerCase()){
-						console.log('coincide')
+						
 						error=false
 						break;
 					}
@@ -181,7 +181,7 @@ var core ={
 				if(error){
 					vars.reply=formSettings[param].error.txt
 					vars.voice=formSettings[param].error.voice.trim()!=='' ? formSettings[param].error.voice : formSettings[param].error.txt
-					console.log('no coincide')
+					
 
 					return vars;
 				}
@@ -192,16 +192,21 @@ var core ={
 			   
 
 		}
+
+	
 		
 		if(vars.formulario[param].trim()!==''){
-			vars.reply=formSettings[param].change.txt
-			vars.voice=formSettings[param].error.voice.trim()!=='' ? formSettings[param].error.voice : formSettings[param].error.txt
+		
+			vars.reply=formSettings[param].change.txt+' '
+			vars.voice=formSettings[param].change.txt+' '
 		}
-		else
+		else{
+			
 			vars.reply=''
+		}
 
 		vars.formulario[param]=value
-		console.log('formulario saveData ',vars.formulario)
+		
 		return checkFlow(vars)
   		
 	},
@@ -216,7 +221,7 @@ var core ={
 		}
 		var param;
 		if(vars.begin){
-			console.log('begin true')
+			
 			for (var key in vars.formulario) {
 				param=key;
 			 	if(vars.formulario[key].trim()==''){
@@ -236,7 +241,7 @@ var core ={
 
 		vars.reply=formSettings[param].error.txt
 		vars.voice=formSettings[param].error.voice.trim()!=='' ? formSettings[param].error.voice : formSettings[param].error.txt
-		console.log('retorno ',vars)
+		
 		return vars
 
 	},
